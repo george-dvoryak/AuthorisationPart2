@@ -12,8 +12,8 @@ class LoginViewController: UIViewController {
     @IBOutlet var usernameTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     
-    let username = "Sensei"
-    let password = "322322"
+    private let username = "Sensei"
+    private let password = "322322"
     
     override func viewDidLoad() {
         super.viewDidLoad()
