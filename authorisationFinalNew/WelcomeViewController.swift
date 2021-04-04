@@ -9,8 +9,17 @@ import UIKit
 
 class WelcomeViewController: UIViewController {
 
+    @IBOutlet var usernameLabel: UILabel!
+    
+    var usernameToShow: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        usernameLabel.text = usernameToShow
     }
     
+    @IBAction func logOutButtonPressed() {
+        dismiss(animated: true)
+        
+    }
 }
