@@ -27,7 +27,7 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Deu-Bw-yrW">
                                         <rect key="frame" x="0.0" y="59" width="310" height="34"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="password"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="password"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QCa-pk-2xC">
                                         <rect key="frame" x="0.0" y="118" width="310" height="42"/>
@@ -35,7 +35,7 @@
                                         <state key="normal" title="Log In"/>
                                         <connections>
                                             <action selector="logInButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kwn-fF-lPe"/>
-                                            <segue destination="0MS-Sw-CIe" kind="presentation" modalPresentationStyle="fullScreen" id="SKP-6g-Ydd"/>
+                                            <segue destination="0MS-Sw-CIe" kind="presentation" identifier="showWelcomeVC" modalPresentationStyle="fullScreen" id="SKP-6g-Ydd"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -99,8 +99,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Log out"/>
                                 <connections>
-                                    <action selector="logOutButtonPressed" destination="0MS-Sw-CIe" eventType="touchUpInside" id="H3H-Zb-kzw"/>
-                                    <segue destination="Hnw-EQ-PUd" kind="unwind" unwindAction="unwindFor:" id="9XC-R2-70C"/>
+                                    <segue destination="Hnw-EQ-PUd" kind="unwind" unwindAction="unwindFor:" id="m5C-bq-iMG"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🔓" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TP0-0z-pyB">
